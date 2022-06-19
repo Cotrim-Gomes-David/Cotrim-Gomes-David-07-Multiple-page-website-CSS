@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr-France">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPEM</title>
+    <link rel="icon" type="image/x-icon" href="..\pictures\favicon.jpg">
+        <link rel="stylesheet" href="..\content\website 4 Cotrim Gomes David.css"> 
+    </head>
+    <body>
+      <header>
+        <div class="flex-container">
+            <div> <img src="..\pictures\lpem.png" width="125px" class="icon" title="lpem" ></div>
+            <div style="flex-grow: 8"><a href="..\content\French version.html" class="Home">Lycee Prive Emile Metz</a></div>
+            <div> <a href="..\content\English version.html"><img 
+              src="..\pictures\English Flag.png" width="40px"></a>
+            <a href="..\content\Portuguese version.html">
+              <img src="..\pictures\Portugal flag.png" width="30px">
+            </a></div>  
+          </div>
+        
+      
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="..\content\French version.html">Accueil</a>
+          <a href="..\content\Etudiants.html">Etudiants</a>
+          <a href="..\content\Professeurs fr.html">Professeurs</a>
+          <a href="..\content\Horaire.html">Horaire</a>
+          <a href="..\content\Contacte fr.html">Contacte</a>
+          <a href="..\Index.html">Deconnection</a>
+        </div>
+        <div id="main">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "lightblue";
+          }
+          </script> 
+      </header>
+        <h1 style="text-align: center;">Professeurs</h1>
+        <table style="width: 100%;">
+            <tr>
+          <th style="background-color: gray;">Nom</th>
+          <th style="background-color: gray;">Numero de telephone</th>
+            </tr>
+            <tr>
+                <td style="background-color: white;">M. Filimon</td>
+                <td style="background-color: white;">+352 123 456 789</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">Mme. Dimmer</td>
+                <td style="background-color: gray;">+352 987 654 321</td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">Mme. Rahool</td>
+                <td style="background-color: white;">+352 789 456 123</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">Mme. Dos Santos</td>
+                <td style="background-color: gray;">+352 321 654 987</td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">M. Guignard</td>
+                <td style="background-color: white;">+352 789 123 456</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">M. Thiry</td>
+                <td style="background-color: gray;">+352 741 852 963</td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">Mme. Bucur</td>
+                <td style="background-color: white;">+352 963 852 741</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">Mme. Molitor</td>
+                <td style="background-color: gray;">+352 147 258 369</td>
+            </tr>
+        </table>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Haut</button>
+        <script>
+         
+          var mybutton = document.getElementById("myBtn");
+          
+          
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+         
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+        <footer>
+          <p style="text-align: center;">Tel: 555 666 333<br>
+          <a href="..\Index.html"><img src="..\pictures\log off .jpg" alt="goes back to main menu with flags" width="20px" title="deconnection"></a></p>
+        </footer>
+    </body>
+    
+</html>

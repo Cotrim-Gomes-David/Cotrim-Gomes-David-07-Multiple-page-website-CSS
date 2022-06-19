@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-Portugal">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPEM</title>
+    <link rel="icon" type="image/x-icon" href="..\pictures\favicon.jpg">
+        <link rel="stylesheet" href="..\content\website 4 Cotrim Gomes David.css">   
+    </head>
+    <body>
+      <header> 
+        <div class="flex-container">
+          <div> <img src="..\pictures\lpem.png" width="125px" class="icon" title="lpem" ></div>
+          <div style="flex-grow: 8"><a href="..\content\Portuguese version.html" class="Home">Lycee Prive Emile Metz</a></div>
+          <div> <a href="..\content\English version.html"><img 
+            src="..\pictures\English Flag.png" width="40px"></a>
+          <a href="..\content\French version.html">
+            <img src="..\pictures\French Flag.webp" width="30px">
+          </a></div>  
+        </div>
+      
+    
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="..\content\Portuguese version.html">Pagina inicial</a>
+        <a href="..\content\Alunos.html">Alunos</a>
+        <a href="..\content\Professores pt.html">Professores</a>
+        <a href="..\content\Cronoprama.html">Cronograma</a>
+        <a href="..\content\Contacto pt.html">Contacto</a>
+        <a href="..\Index.html">Sair</a>
+      </div>
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "lightblue";
+        }
+        </script> 
+      </header>
+      <h1 style="text-align: center;">Pagina inicial</h1>
+      <p style="text-align: center;"><img src="..\pictures\lpem.jpg" alt="photo de l'ecole"
+         height="50%" width="50%" title="lpem"></p>
+      <h4 style="text-align: center;">Sobre</h4>
+      <p style="text-align: center;">Sendo a única escola MINT do Grão-Ducado, o LPEM valoriza, 
+        por um lado, o ensino da matemática,<br>
+        informática, tecnologias e ciências naturais por outro lado a interdisciplinaridade que 
+        descompartimentaliza o ensino.<br>
+        Ao mesmo tempo, o Makerspace "EM@B03" e o uso do iPad contribuem para essa nova abordagem 
+        educacional.<br>
+        Os professores do LPEM também estão presentes na escola fora do horário de aula. Graças à 
+        sua presença e disponibilidade,<br>
+        ocorre uma estreita colaboração entre pais, professores e alunos.</p>
+      <h4 style="text-align: center;">Portas abertas 2022</h4>
+      <ul style="text-align: center;"><li>Sabado,19 Marso 2022 de 09:00-13:00</li><li>Sexta-feira,
+         13 Maio 2022 de 16:00-19:00</li><li>Sabado, 14 Maio 2022 de 09:00-15:00</li></ul>
+      <h4 style="text-align: center;">Localizaçao</h4>
+      <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.0301962469402!2d6.132719015702008!3d49.6348854793712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47954f18c1f8a721%3A0xdf0b2f1f4e71633b!2sLyc%C3%A9e%20Priv%C3%A9%20Emile%20Metz!5e0!3m2!1sde!2slu!4v1655121846867!5m2!1sde!2slu" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </iframe></p>
+      <!-- I had to let this long otherwise this Iframe wouldn't work -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Topo</button>
+      <script>
+       
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+       
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+      <footer>
+        <p style="text-align: center;">Tel: 555 666 333<br>
+        <a href="..\Index.html"><img src="..\pictures\log off .jpg" alt="goes back to main menu with flags" 
+          width="20px" title="sair"></a></p>
+      </footer>
+    </body>
+  
+</html>

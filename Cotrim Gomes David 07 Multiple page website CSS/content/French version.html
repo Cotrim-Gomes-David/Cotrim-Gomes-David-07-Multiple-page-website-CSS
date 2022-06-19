@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr-France">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPEM</title>
+    <link rel="icon" type="image/x-icon" href="..\pictures\favicon.jpg">
+        <link rel="stylesheet" href="..\content\website 4 Cotrim Gomes David.css">
+    </head>
+    <body>
+      <header>
+        
+        <div class="flex-container">
+          <div> <img src="..\pictures\lpem.png" width="125px" class="icon" title="lpem" ></div>
+          <div style="flex-grow: 8"><a href="..\content\French version.html" class="Home">Lycee Prive Emile Metz</a></div>
+          <div> <a href="..\content\English version.html"><img 
+            src="..\pictures\English Flag.png" width="40px"></a>
+          <a href="..\content\Portuguese version.html">
+            <img src="..\pictures\Portugal flag.png" width="30px">
+          </a></div>  
+        </div>
+      
+    
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="..\content\French version.html">Accueil</a>
+        <a href="..\content\Etudiants.html">Etudiants</a>
+        <a href="..\content\Professeurs fr.html">Professeurs</a>
+        <a href="..\content\Horaire.html">Horaire</a>
+        <a href="..\content\Contacte fr.html">Contacte</a>
+        <a href="..\Index.html">Deconnection</a>
+      </div>
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "lightblue";
+        }
+        </script> 
+      </header>
+      <h1 style="text-align: center;">Accueil</h1>
+      <p style="text-align: center;"><img src="..\pictures\lpem.jpg" alt="photo de l'ecole"
+         height="50%" width="50%" title="lpem"></p>
+      <h4 style="text-align: center;">A propos</h4>
+      <p style="text-align: center;">En tant que seule école MINT du Grand-Duché, le LPEM 
+        valorise d’une part, l’enseignement des mathématiques,<br>
+        de l’informatique, des technologies et des sciences naturelles d’autre part 
+        l’interdisciplinarité qui décloisonne l’enseignement.<br>
+        Parallèlement, le Makerspace « EM@B03 » ainsi que l’utilisation de l’iPad
+         contribuent à réaliser cette nouvelle approche pédagogique.<br>
+        Les enseignants du LPEM sont présents au lycée également en dehors de
+         leurs heures de cours. Grâce à leur présence et à leur disponibilité,
+         <br>une étroite collaboration entre parents, enseignants et élèves a lieu.</p>
+      <h4 style="text-align: center;">Portes ouvertes 2022</h4>
+      <ul style="text-align: center;"><li>Samedi,19 Mars 2022 de 09:00-13:00</li>
+        <li>Vendredi, 13 Mai 2022 de 16:00-19:00</li><li>Samedi, 14 Mai 2022 de 09:00-15:00</li></ul>
+      <h4 style="text-align: center;">Localisation</h4>
+      <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.0301962469402!2d6.132719015702008!3d49.6348854793712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47954f18c1f8a721%3A0xdf0b2f1f4e71633b!2sLyc%C3%A9e%20Priv%C3%A9%20Emile%20Metz!5e0!3m2!1sde!2slu!4v1655121846867!5m2!1sde!2slu" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </iframe></p>
+      <!-- I had to let this long otherwise this Iframe wouldn't work -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Haut</button>
+      <script>
+       
+        var mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+       
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+      <footer>
+        <p style="text-align: center;">Tel: 555 666 333<br>
+        <a href="..\Index.html"><img src="..\pictures\log off .jpg" 
+          alt="goes back to main menu with flags" width="20px"
+          title="deconnection"></a></p>
+      </footer>
+    </body>
+   
+</html>

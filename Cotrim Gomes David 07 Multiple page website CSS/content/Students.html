@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPEM</title>
+    <link rel="icon" type="image/x-icon" href="..\pictures\favicon.jpg">
+        <link rel="stylesheet" href="..\content\website 4 Cotrim Gomes David.css">
+        
+            
+        
+           
+    </head>
+    <body>
+      <header>  <div class="flex-container">
+        <div> <img src="..\pictures\lpem.png" width="125px" class="icon" title="lpem" ></div>
+        <div style="flex-grow: 8"><a href="..\content\English version.html" class="Home">Lycee Prive Emile Metz</a></div>
+        <div> <a href="..\content\French version.html"><img 
+          src="..\pictures\French Flag.webp" width="30px"></a>
+        <a href="..\content\Portuguese version.html">
+          <img src="..\pictures\Portugal flag.png" width="30px">
+        </a></div>  
+      </div>
+    
+  
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="..\content\English version.html">Home</a>
+      <a href="..\content\Students.html">Students</a>
+      <a href="..\content\Teachers.html">Teachers</a>
+      <a href="..\content\Schedule.html">Schedule</a>
+      <a href="..\content\Contact english.html">Contact</a>
+      <a href="..\Index.html">Log out</a>
+    </div>
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "lightblue";
+      }
+      </script> 
+      </header>
+          <h1 style="text-align: center;">Students</h1>
+        <table style="width: 100%;">
+            <tr>
+                <th style="background-color: gray;">Nr.</th>
+                <th style="background-color: gray;">Surname</th>
+                <th style="background-color: gray;">Name</th>
+                <th style="background-color: gray;">Date of Birth</th>
+            </tr>
+            <tr>
+                <td style="background-color: white;">1</td>
+                <td style="background-color: white;">ALMEIDA ESTEVES</td>
+                <td style="background-color: white;">Igor Duarte</td>
+                <td style="background-color: white;">23.06.2004</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">2</td>
+                <td style="background-color: gray;">AWET GHEBREHIWET</td>
+                <td style="background-color: gray;">Filimon</td>
+                <td style="background-color: gray;">16.08.2001</td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">3</td>
+                <td style="background-color: white;">BABAJIC</td>
+                <td style="background-color: white;">Kenan</td>
+                <td style="background-color: white;">20.08.2001</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">4</td>
+                <td style="background-color: gray;">CAMILLERI</td>
+                <td style="background-color: gray;">Ryan</td>
+                <td style="background-color: gray;">14.05.2006</td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">5</td>
+                <td style="background-color: white;">CONTRERAS BERAS</td>
+                <td style="background-color: white;">Robert</td>
+                <td style="background-color: white;">28.06.2002</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">6</td>
+                <td style="background-color: gray;">COSTA MARTINS</td>
+                <td style="background-color: gray;">Paul Anderson</td>
+                <td style="background-color: gray;">30.05.2000</td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">7</td>
+                <td style="background-color: white;">COTRIM GOMES</td>
+                <td style="background-color: white;">David</td>
+                <td style="background-color: white;">18.06.2004</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">8</td>
+                <td style="background-color: gray;">FERREIRA RIBEIRO</td>
+                <td style="background-color: gray;">Luis Filipe</td>
+                <td style="background-color: gray;">21.01.2003</td>
+            </tr>
+            <tr>
+                <td  style="background-color: white;">9</td>
+                <td style="background-color: white;">JERVIS</td>
+                <td style="background-color: white;">Yona Lee</td>
+                <td style="background-color: white;">11.11.2005</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">10</td>
+                <td style="background-color: gray;">NOGUEIRA DOS SANTOS</td>
+                <td style="background-color: gray;">Dominic</td>
+                <td style="background-color: gray;">12.04.2005</td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">11</td>
+                <td style="background-color: white;">RODOMANOV</td>
+                <td style="background-color: white;">Vladislav</td>
+                <td style="background-color: white;">11.09.2003</td>
+            </tr>
+            <tr>
+                <td style="background-color: gray;">12</td>
+                <td style="background-color: gray;">SALIM</td>
+                <td style="background-color: gray;">El Mowafak</td>
+                <td style="background-color: gray;">24.10.1998</td>
+            </tr>
+        </table>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+          
+          var mybutton = document.getElementById("myBtn");
+          
+         
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+        <footer>
+          <p style="text-align: center;">Tel: 555 666 333<br>
+          <a href="..\Index.html"><img src="..\pictures\log off .jpg" 
+            alt="goes back to main menu with flags" width="20px" 
+            title="log out"></a></p>
+        </footer>
+    </body>
+   
+</html>

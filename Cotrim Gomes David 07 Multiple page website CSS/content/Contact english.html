@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <title>LPEM</title>
+    <link rel="icon" type="image/x-icon" href="..\pictures\favicon.jpg">
+        <link rel="stylesheet" href="..\content\website 4 Cotrim Gomes David.css">
+           
+    </head>
+    <body>
+      <header>
+        <div class="flex-container">
+          <div> <img src="..\pictures\lpem.png" width="125px" class="icon" title="lpem" ></div>
+          <div style="flex-grow: 8"><a href="..\content\English version.html" class="Home">Lycee Prive Emile Metz</a></div>
+          <div> <a href="..\content\French version.html"><img 
+            src="..\pictures\French Flag.webp" width="30px"></a>
+          <a href="..\content\Portuguese version.html">
+            <img src="..\pictures\Portugal flag.png" width="30px">
+          </a></div>  
+        </div>
+      
+    
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="..\content\English version.html">Home</a>
+        <a href="..\content\Students.html">Students</a>
+        <a href="..\content\Teachers.html">Teachers</a>
+        <a href="..\content\Schedule.html">Schedule</a>
+        <a href="..\content\Contact english.html">Contact</a>
+        <a href="..\Index.html">Log out</a>
+      </div>
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "lightblue";
+        }
+        </script> 
+      </header>
+        <h1 style="text-align: center;">Contact</h1>
+        <p style="text-align: center;">
+        Email:davidisthebest@gmail.com<br>
+        Secretary:555 666 333<br>
+        Direction:151 585 566
+        </p>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+         
+          var mybutton = document.getElementById("myBtn");
+          
+          
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+         
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+        <footer>
+          <p style="text-align: center;">
+          <a href="..\Index.html"><img src="..\pictures\log off .jpg" 
+            alt="goes back to main menu with flags" width="1%" height="1%" 
+            title="log out"></a></p>
+        </footer>
+    </body>
+ 
+</html>
